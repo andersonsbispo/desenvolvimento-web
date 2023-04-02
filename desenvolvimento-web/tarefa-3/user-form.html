@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--ZfTG-t5pQAm8Gp9gHb0Ruld7Ro77l-y-g&usqp=CAU" type="image/x-icon">
+    
+    <style>
+      body{
+        background-color: #eff2f4;
+      }
+      .navbar{
+        margin-bottom: 60px;
+      }
+      .card{
+        box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.3);
+      }
+      iframe{
+        width: 100%;
+        height: 445px;
+      }
+    </style>
+    
+    <title>Cadastro de Usuários</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #8be4e2;" data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><b>Cadastro de Usuários</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="user-form.html"><b>Cadastro de Usuários</b></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="tarefa-form.html">Cadastro de Tarefas</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="card">
+              <div class="card-body">
+                <h1>Cadastro de Usuários</h1>
+                <form id="">
+                  <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="gender">Gênero:</label> <br>
+                    <select class="form-select" id="gender" name="gender">
+                      <option value="Masculino">Masculino</option>
+                      <option value="Feminino">Feminino</option>
+                      <option value="Outro">Outro</option>
+                    </select>
+                  </div>
+
+                  <br>
+
+                  <div class="form-group text-center">
+                    <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="user-table.html" class="nav-link px-2 text-muted"><b>Usuários Cadastrados</b></a></li>
+        <li class="nav-item"><a href="tarefa-table.html" class="nav-link px-2 text-muted"><b>Tarefas Cadastradas</b></a></li>
+        <li class="nav-item"><a href="associ-form.html" class="nav-link px-2 text-muted"><b>Usuários & Tarefas</b></a></li>
+        <li class="nav-item"><a href="relatorio.html" class="nav-link px-2 text-muted"><b>Relatório</b></a></li>
+      </ul>
+      <p class="text-center text-muted">Anderson Santos Bispo RA:11200269</p>
+    </footer>
+  </div>
+  
+</html>

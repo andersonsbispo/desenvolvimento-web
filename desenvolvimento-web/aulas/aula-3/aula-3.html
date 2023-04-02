@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: red;
+                font-size: 30px;
+            }
+            #h1_titulo{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .h1_base{
+                font-style: italic;    
+                text-shadow: 1px 2px #888888;
+            }
+            .input_control{
+                border: 1px solid black;
+                color:blue;
+                box-shadow: 5px 5px #888888;
+                left:50%;
+                position: relative;
+            }
+            table ,tr, th{
+                border: 1px solid red;
+            }
+            #btn_enviar{
+                border: 1px solid green;
+                background-color: green;
+                color:white;
+                border-radius: 15%;
+            }
+            #btn_enviar:active{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="h1_titulo">Cadastro de usuarios</h1>
+        <h1 ><label class="h1_base">é nois</label></h1>
+        <form>
+            <label>Nome: </label> <br />
+            <input type="text" class="input_control" /><br />
+            Login: <br />
+            <input type="text" class="input_control" /><br />
+            Senha: <br />
+            <input type="password" /><br />
+            Data Nascimento: <br />
+            <input type="date" /><br />
+            Genero: <br />
+            <select>
+                <option>Masc</option>
+                <option>Fem</option>
+                <option>Prefiro n dizer</option>
+            </select><br />
+            Obs: <br />
+            <textarea></textarea><br />
+            <input type="submit" id="btn_enviar"/>
+            <input type="reset" />
+            <br />
+        </form>
+        <table>
+            <tr>
+                <th style="width:30%;">Nome</th>
+                <th style="width:15%;">Login</th>
+                <th style="width:10%;">Data Nas</th>
+                <th style="width:10%;">Genero</th>
+                <th style="width:35%;">Obs</th>
+            </tr>
+            <tr>
+                <td>Roberta</td>
+                <td>rob</td>
+                <td>21/04/1997</td>
+                <td>f</td>
+                <td>mtas observ</td>
+            </tr>
+            <tr>
+                <td>Anderson</td>
+                <td>anderbispo</td>
+                <td>30/07/1997</td>
+                <td>m</td>
+                <td>Outras observ</td>
+            </tr>
+            <tr>
+                <td>Ricardo</td>
+                <td>rick</td>
+                <td>02/10/1999</td>
+                <td>m</td>
+                <td>kkkkkk</td>
+            </tr>
+        </table>
+    </body>
+</html>
