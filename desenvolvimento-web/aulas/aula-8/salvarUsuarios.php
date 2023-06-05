@@ -14,5 +14,5 @@
         '".$login."','".$senha."')";
     $resultado = mysqli_query($conexao, $sql);
 
-    header('location: frontaula12.php');
+    header('location: frontaula3.php');
 ?>
